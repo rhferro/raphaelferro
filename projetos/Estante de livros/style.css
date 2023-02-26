@@ -1,0 +1,55 @@
+
+
+body {
+    background-image: linear-gradient(to bottom, #fff, rgb(223, 73, 73), rgb(115, 217, 53), rgb(115, 217, 129), rgb(115, 217, 201), rgb(2, 10, 2));
+    
+}
+.margin {
+    margin-left: 5em;
+}
+
+#fonte {
+    font-size: 9pt;
+}
+
+p,
+ol>li {
+    font-size: 1.5em;
+    text-align: justify;
+    margin-right: 40%;
+}
+
+.botao {
+    font-size: .66em;
+
+    background-color: black;
+    border: solid black 3px;
+    color: rgba(216, 216, 87, 0.967);
+    border-radius: 90%;
+    text-decoration: none;
+    box-shadow: 2px 2px 1px 1px rgb(61, 61, 36);
+}
+
+section>h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    width: 15%;
+    /* height:  */
+}
+
+table {
+    border: solid 2px black;
+    font-size: 1.33em;
+}
+
+.efeito:active {
+    box-shadow: none;
+}

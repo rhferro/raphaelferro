@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante Virtual</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            background-image: linear-gradient(to bottom, #fff, rgb(223, 73, 73), rgb(115, 217, 53), rgb(115, 217, 129), rgb(115, 217, 201), rgb(2, 10, 2));
+        }
+        #fonte{
+            font-size: 9pt;
+        }
+        p, ol>li{
+            font-size: 1.5em;
+            text-align: justify;
+            margin-right: 40%;
+        }
+        .botao{
+            font-size: .66em;
+            
+            background-color: black ;
+            border: solid black 3px;
+            color: rgba(216, 216, 87, 0.967);
+            border-radius: 90%;
+            text-decoration: none;
+            box-shadow: 2px 2px 1px 1px rgb(61, 61, 36);
+        }
+        section>h3{
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+        span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        img {
+            width: 15%;
+            /* height:  */
+        }
+        table{
+            border: solid 2px black;
+            font-size: 1.33em;
+        }
+        .efeito:active{
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="inicio" class="margin">
+        <h1 style="font-size: 4em; text-align: center;border: 15px;">Estante de livros</h1>
+        <h1 class="">Sua biblioteca à um click de distância</h1>
+    </div>
+        
+    <div class="margin">
+        <h1>Sumário:</h1>
+        <ol>
+            <li>Harry Potter e a Pedra filosofal     <a href="#Harry"class='botao efeito'>localizar</a>   </li>
+            <li>Senhor dos Anéis: A Sociedade do Anel <a href="#Tolkien"class='botao efeito'>localizar</a>  </li>
+            <li>Percy Jackson e o Ladrão de Raios   <a href="#Percy"class='botao efeito'>localizar</a>    </li>
+            <li>Alice no país das maravilhas     <a href="#Alice"class='botao efeito'>localizar</a>       </li>
+            <li >O Guia do Mochileiro das Galáxias   <a href="#GuiaDoMochileiro"class='botao efeito'>localizar</a>    </li>
+            <!-- Adorei! Já li todas as sagas (menos Alice) -->    
+        </ol>
+    </div>
+    <hr>
+    <section class="margin">
+        <h3 id="Harry">Harry Potter e a Pedra filosofal</h3>
+        <img src="imagem/HP1.jpg" alt="Capa do livro - Harry Potter e a Pedra filosofal">
+        <h3>Sinopse</h3>
+        <p> <span>Harry Potter</span> nunca tinha ouvido falar em Hogwarts até o momento em que as cartas começam a aparecer no capacho do nº 4 da rua dos Alfeneiros. Endereçadas com um lacre púrpura, elas são rapidamente confiscadas por seus tios terríveis. E então, no décimo primeiro aniversário de Harry, um homem gigantesco com olhos luzindo como besouros negros chamado <span>Rúbeo Hagrid</span> entra intempestivamente com uma notícia assombrosas: Harry Potter é um bruxo e tem uma vaga na <span>escola de magia e bruxaria de Hogwarts</span>. Uma aventura inacreditável está para começar!</p>
+        <p id="fonte">Fonte: Google Books</p>
+        <table>
+           <tr>
+                <th>Data da primeira publicação </th>
+                <th>Autor                       </th>
+                <th>Idioma original             </th>
+                <th>Gêneros                     </th>
+            </tr> <!--Essa abre e fecha das tabelas-->
+            <tr>
+                <td>26 de junho de 1997                         </td>
+                <td>J. K. Rowling                               </td>
+                <td>Inglês                                      </td>
+                <td>
+                    <li>Aventura                </li> 
+                    <li>Fantasia                </li> 
+                    <li>Literatura fantástica   </li> 
+                </td>
+                <!-- Table data -->
+            </tr>
+        </table>
+    </section>
+    <br>
+    <a href="#inicio" class='botao efeito margin'>voltar ao topo</a>
+    <br>
+    <br>
+    <hr>
+    <section class="margin">
+        <h3 id="Tolkien">Senhor dos Anéis: A Sociedade do Anel</h3>
+        <img src="imagem/SdA1.jpg"  alt="Capa - Senhor dos Anéis: A Sociedade do Anel">
+        <h3>Sinopse</h3>
+        <p>A Sociedade do Anel O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico de fantasia moderno, conquistando milhões de leitores e se tornando o padrão de referência para todas as outras obras do gênero até hoje. A imaginação prodigiosa de <span>J.R.R. Tolkien</span> e seu conhecimento profundo das antigas mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente quanto o mundo real. A Sociedade do Anel começa no Condado, a região rural do oeste da Terra-média onde vivem os diminutos e pacatos hobbits. <span>Bilbo Bolseiro</span>, um dos raros aventureiros desse povo, cujas peripécias foram contadas em O Hobbit, resolve ir embora do Condado e deixa sua considerável herança nas mãos de seu jovem parente Frodo.</p>
+        <p id="fonte">Fonte: Google Books</p>        
+        <table>
+            <tr>
+                <th>Data da primeira publicação </th>
+                <th>Autor                       </th>
+                <th>Idioma original             </th>
+                <th>Gêneros                     </th>
+            </tr>
+            <tr>
+                <td>29 de julho de 1954                         </td>
+                <td>J.R.R.Tolkien                               </td>
+                <td>Inglês                                      </td>
+                <td>Literatura fantástica, romance e aventura   </td>
+            </tr>
+        </table>
+    </section >
+    <br>
+    <a href="#inicio" class='botao efeito margin'>voltar ao topo</a>
+    <br>
+    <br>
+    <hr>
+    <section class="margin">
+        <h3 id="Percy">Percy Jackson e o Ladrão de Raios </h3>
+        <img src="imagem/PJ1.jpg"  alt="Capa - Percy Jackson e o Ladrão de Raios ">
+        <h3>Sinopse</h3>
+        <p>Primeiro volume da saga Percy Jackson e os olimpianos, O ladrão de raios esteve entre os primeiros lugares na lista das séries mais vendidas do The New York Times. O autor conjuga lendas da mitologia grega com aventuras no século XXI. Nelas, os deuses do Olimpo continuam vivos, ainda se apaixonam por mortais e geram filhos metade deuses, metade humanos, como os heróis da Grécia antiga. Marcados pelo destino, eles dificilmente passam da adolescência. Poucos conseguem descobrir sua identidade. O garoto-problema Percy Jackson é um deles. Tem experiências estranhas em que deuses e monstros mitológicos parecem saltar das páginas dos livros direto para a sua vida. Pior que isso: algumas dessas criaturas estão bastante irritadas. Um artefato precioso foi roubado do Monte Olimpo e Percy é o principal suspeito. Para restaurar a paz, ele e seus amigos – jovens heróis modernos – terão de fazer mais do que capturar o verdadeiro ladrão: precisam elucidar uma traição mais ameaçadora que fúria dos deuses.</p>
+        <p id="fonte">Fonte: Google Books</p>
+        <table>
+            <tr>
+                <th>Data da primeira publicação </th>
+                <th>Autor                       </th>
+                <th>Idioma original             </th>
+                <th>Gêneros                     </th> 
+            </tr>
+            <tr>
+                <td>28 de junho de 2005               </td>
+                <td>Rick Riordan                        </td>
+                <td>Inglês                              </td>
+                <td>Ação, fantasia, aventura e infantil </td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <a href="#inicio" class='botao efeito margin'>voltar ao topo</a>
+    <br>
+    <br>
+    <hr>
+    <section class="margin">
+        <h3 id="Alice">Alice no país das maravilhas</h3>
+        <img src="imagem/Alice.jpg"  alt="Capa - Alice no país das maravilhas">
+        <h3>Sinopse</h3>
+        <p>Uma menina, um coelho e uma história capazes de fazer qualquer um de nós voltar a sonhar. <span>Alice</span> é despertada de um leve sono ao pé de uma árvore por um coelho peculiar. Uma criatura alva e falante com roupas engraçadas, que consulta seu relógio e reclama do próprio atraso. Curiosa como toda criança, Alice segue o animal até cair em um buraco sem fim que mudou para sempre a literatura infantil. Mais de 150 anos depois, Alice no País das Maravilhas continua repleto de ensinamentos para aqueles que ousaram seguir o Coelho Branco até sua toca.</p>
+        <p id="fonte">Fonte: Google Books</p>
+        <table>
+            <tr>
+                <th>Data da primeira publicação </th>
+                <th>Autor                       </th>
+                <th>Idioma original             </th>
+                <th>Gêneros                     </th> 
+            </tr>
+            <tr>
+                <td>novembro de 1865   </td>
+                <td>Lewis Carroll       </td>
+                <td>Inglês              </td>
+                <td>
+                    <li>Literatura infantil </li>
+                    <li>Fantástica          </li>
+                    <li>Ficção absolutista  </li>
+                    
+                </td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <a href="#inicio" class='botao efeito margin'>voltar ao topo</a>
+    <br>
+    <br>
+    <hr>
+    <section class="margin">
+        <h3 id="GuiaDoMochileiro">O Guia do Mochileiro das Galáxias</h3>
+        <img src="imagem/GdMdG.jpg"  alt="Capa - O Guia do Mochileiro das Galáxias">
+        <h3>Sinopse</h3>
+        <p>Considerado um dos maiores clássicos da literatura de ficção científica, O Guia do Mochileiro das Galáxias vem encantando gerações de leitores ao redor do mundo com seu humor afiado.
+            <br>
+            Este é o primeiro título da famosa série escrita por Douglas Adams, que conta as aventuras espaciais do inglês Arthur Dent e de seu amigo Ford Prefect.
+            <br>
+            A dupla escapa da destruição da Terra pegando carona numa nave alienígena, graças aos conhecimentos de Prefect, um E.T. que vivia disfarçado de ator desempregado enquanto fazia pesquisa de campo para a nova edição do Guia do Mochileiro das Galáxias, o melhor guia de viagens interplanetário.
+            <br>
+            Mestre da sátira, Douglas Adams cria personagens inesquecíveis e situações mirabolantes para debochar da burocracia, dos políticos, da "alta cultura" e de diversas instituições atuais. Seu livro, que trata em última instância da busca do sentido da vida, não só diverte como também faz pensar.</p>
+        <p id="fonte">Fonte: Google Books</p>
+        <table>
+            <tr>
+                <th>Data da primeira publicação </th>
+                <th>Autor                       </th>
+                <th>Idioma original             </th>
+                <th>Gêneros                     </th> 
+            </tr>
+            <tr>
+                <td>12 de outubro de 1979   </td>
+                <td>Douglas Adams           </td>
+                <td>Inglês                  </td>
+                <td>
+                    <li>Ficção científica   </li>
+                    <li>Romance             </li>
+                    <li>Ficção humorística  </li>
+                    
+                    
+                    
+                </td>
+            </tr>
+        </table>
+    </section>
+    <br><br>
+    <a href="#inicio" class='botao efeito'>voltar ao topo</a>
+        
+
+    <footer>
+        <br><br><br><br><br><br>
+    </footer>
+</body>
+
+</html>

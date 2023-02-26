@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:wght@100;300;500&family=Roboto:wght@100;300;500;700&display=swap');
+
+body {
+	background: #643a7a;
+	font-family: 'Roboto', sans-serif;
+}
+
+.frame {
+	position: absolute;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+
+	top: 50%;
+	left: 50%;
+	/* width: 654.56px;*/
+	/* height: 0px;  */
+	margin-top: -190px;
+	margin-left: -250px;
+	
+	
+
+}
+
+.p-tecnologias {
+	font-size: 1em;
+}
+
+
+
+.frame,
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.flip-me {
+	position: absolute;
+	top: 30%;
+	left: 77%;
+	font-size: 20px;
+	transform: rotate(-90deg);
+	color: #77d6d6;
+}
+
+.front {
+	width: 100%;
+	height: 100%;
+	box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+}
+
+.front h1,
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 90px;
+	margin: 85px 12px;
+	color: rgb(90, 237, 131);
+}
+
+.front-p {
+	font-size: 1.2em;
+}
+
+/* faz virar */
+.card:hover .flip {
+	transform: rotateX(180deg) translate3d(0, 0, 0);
+	box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flip {
+	transform-style: preserve-3d;
+	transition: all 1s ease-in-out;
+	/* na perspectiva deixa-se com 1000px como padrão */
+	perspective: 1000px;
+}
+
+.front,
+.back {
+	-webkit-backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background: rgb(31, 23, 23);;
+}
+
+.card .back {
+	transform: rotateX(-180deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.back {
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.back h2 {
+	font-size: 36px;
+	margin: 8px;
+	color: #77d6d6;
+}
+
+.back h3,
+p {
+	color: rgba(255, 255, 255, 0.7);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	margin: 30px;
+}
+
+img {
+	width: 32px;
+}
+
+img:hover {
+	width: 50px;
+	cursor: pointer;
+}
+
+.tecnologias {
+	margin: 20px;
+}
+
+.cropped {
+    width: 300px; /* width of container */
+    height: 150px; /* height of container */
+    object-fit: cover;
+    border: none
+}
