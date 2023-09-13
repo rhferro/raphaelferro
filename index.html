@@ -14,6 +14,11 @@
   <!-- CSS REFERENCE -->
   <link rel="stylesheet" href="./src/css/style.css">
 
+  <!-- CSS RESPONSIVE -->
+
+  <!-- MOBILE -->
+  <link rel="stylesheet" href="./src/css/responsive-420.css">
+
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,44 +40,45 @@
 <body>
   <!-- IMAGEM DE FUNDO -->
   <!-- TELA SOBRE A IMAGEM DE FUNDO -->
-  <div class="conteiner mw-100">
+  <div class="conteiner mw-100 ">
 
 
-    <div class="card1">
-      <!-- texto sobre a imagem -->
-      <div class="px-4 py-5 my-5 text-center">
+    <div class="card1 ">
+      <!-- IMAGEM -->
+      <div class="px-4 py-5 my-5 text-center background-text">
 
-        <h1 class="display-5 textColor1 fw-bold" style="padding-top: 9%;padding-right: 0;">MAIS QUE DESENVOLVIMENTO WEB
+        <h1 class="display-xl-4 display-xxl-1 display-lg-2 textColor1 fw-bold">
+          MAIS QUE DESENVOLVIMENTO WEB
         </h1>
 
         <div class="col-lg-6 mx-auto ">
 
-          <p class="lead mb-4 textColor2" style="font-size: 2rem;
-            font-weight: 400;">Aqui realizamos sonhos
+          <p class="lead mb-4 textColor2 responsive" >Aqui realizamos sonhos
           </p>
 
         </div>
 
-
       </div>
+      <picture class="backgound-hero-image ">
+        <source media="(max-width: 425px)"  srcset="./src/img/min-hero-image.jpg 425w">
+
+        <img class="hero-image "
+        src="./src/img/hero-image.jpg"
+        alt="duas crianças mexendo no smartphone">
+
+
+        </img>
+      </picture>
+
+      <!-- texto sobre a imagem -->
+
+
+
     </div>
-
-
-    <img class="shadow  " src="./src/img/hero-image.jpg" style="width: 100%; ;" alt="duas crianças mexendo no smartphone">
-    </img>
-
-
-
-
-
-
-
-
-
-    <!-- BARRA DE NAVEGAÇÃO -->
+        <!-- BARRA DE NAVEGAÇÃO -->
 
     <nav class="navbar fixed-top ">
-      <div class="container-fluid">
+      <div class="container-fluid navbarwidth">
         <a class="navbar-brand" href="#">
           <img class="cropped" src="./src/img/icon/default_transparent_765x625.png" alt="Bootstrap" width="300">
         </a>
@@ -99,7 +105,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#about">Sobre</a></li>
-                
+
                   <li><a class="dropdown-item" href="#skills">Hard Skills</a></li>
                 </ul>
               </li>
@@ -132,159 +138,230 @@
   <!-- APENAS NO CANTO DIREITO -->
   <!-- *TENTAR COLOCAR SITE VERSÃO INGLES E PORTUGUÊS -->
 
-  <!-- PESQUISA -->
-  <!-- *VER COMO FUNCIONA -->
 
 
   <!-- SOBRE -->
-
-
   <section>
 
-    <div class="px-4 py-5 my-5 row justify-content-center marginNone shadow";
-">
-      <div class="col-md-3 offset-md-4">
-        <h1 class="display-3 fw-bold text-end h1Special" id="about">sobre.</h1>
-        <h4 class="text-justify">Sou apaixonado por tecnologia e estudante de Analise e Desenvolvimento de Sistemas</h4>
+    <div class="px-4 py-5 my-5 row justify-content-center marginNone shadow";>
+      <div class="col-xl-4 col-lg-4 col-sm-5">
+        <img src="./src/img/Perfil/myPhoto.png" class="perfilPhoto mx-auto d-block" alt="Foto de Raphael Ferro">
+      </div>
+      <div class="col-lg-4 col-sm-6 col-10">
+        <h1 class="display-3  fw-bold text-lg-end  text-center h1Special" id="about">sobre.</h1>
+        <h4 class="text-justify">Olá! Sou um entusiasta da tecnologia e estudante de Análise e Desenvolvimento de Sistemas com base em Recife, Pernambuco.</h4>
         <p>
-          Atualmente moro em Recife, Pernambuco. Até o ano de 2021 trabalhei como professor de geografia até que me
-          encontrei na área da programação, especificamente no desenvolvimento web.
+          Minha jornada começou de maneira inusitada, pois antes de me aventurar no mundo da programação, eu era professor de geografia até o ano de 2021. No entanto, a paixão pela tecnologia me guiou para o empolgante universo do desenvolvimento web.
         </p>
         <p>
-          Esse espaço é para apresentar um pouco dos projetos e atividades que fiz ao longo do meus estudos e bootcamps.
+          Neste espaço, tenho a oportunidade de compartilhar alguns dos projetos e atividades que realizei ao longo dos meus estudos e bootcamps. Cada linha de código é uma peça do quebra-cabeça que estou montando para criar soluções incríveis e funcionais.
         </p>
         <p>
-          Sente-se e aproveite!
+          Sente-se, relaxe e explore um pouco do meu percurso tecnológico. Espero que você se inspire e desfrute do que compartilho aqui!"
         </p>
       </div>
     </div>
+  </section>
 
-    <!-- HARD SKILLS -->
+  <!-- HARD SKILLS -->
+  <section>
     <div class="px-4 py-5 my-5 row justify-content-start marginNone shadow" >
-      <div class="col-md-3 offset-md-3">
-        <h1 class="display-3 fw-bold text-start h1Special" id="skills">hard skills.</h1>
-        <h4 class="text-justify">Algumas tecnologias aprendidas até o momento
-        </h4>
-      </div>
-      <!-- HTML -->
-    <div class="row justify-content-evenly marginNone marginNone" style="padding-top: 40px;" >
+      <div class="col-xl-3 col-lg-3 col-md-6 col-12 hardskill-padding offset-md-2  offset-lg-3">
 
-      <div class="card col-4 borderNone" style="width: 10rem;">
-        <img src="src/img/icon/html.png" class="card-img-top borderNone" alt="Projeto sobre estante de livros">
-        <div class="card-body">
-          <h5 class="card-title text-center">HTML</h5>
-          <p class="card-text justify"></p>
-          
+          <h1 class="display-3  fw-bold text-lg-start text-sm-start text-xl-start text-center h1Special col-4" id="skills">hard skills.</h1>
+          <h4 class="text-justify col-10">Algumas tecnologias aprendidas até o momento</h4>
+      </div>
+
+
+      <!-- </div> -->
+      <div class="row justify-content-evenly marginNone marginNone" style="padding-top: 40px;" >
+
+        <!-- HTML -->
+        <div class="card col-4 borderNone tecnology-card" >
+          <img src="src/img/icon/html.png" class="card-img-top borderNone" alt="Projeto sobre estante de livros">
+          <div class="card-body">
+
+            <h5 class="card-title text-center">HTML</h5>
+
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="card col-4 borderNone tecnology-card"  >
+          <img src="src/img/icon/css.png" class="card-img-top borderNone" alt="Projeto sobre estante de livros">
+          <div class="card-body">
+            <h5 class="card-title text-center">CSS</h5>
+
+
+          </div>
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <div class="card  col-4 borderNone tecnology-card" >
+          <img src="src/img/icon/java-script.png" class="card-img-top borderNone" alt="Icone do Javascript">
+          <div class="card-body">
+            <h5 class="card-title text-center">Javascript</h5>
+
+          </div>
+          <!-- ICON REFERENCE -->
+          <!-- https://www.flaticon.com/free-icons/javascript -->
         </div>
       </div>
+    <!-- SEGUNDA LINHA DE HARDSKILLS -->
+      <div class="row justify-content-evenly marginNone marginNone" style="padding-top: 40px;" >
+      <!-- REACT -->
+        <div class="card  col-3 borderNone tecnology-card" >
+          <img src="src/img/icon/react.png" class="card-img-top borderNone" alt="Icone do React">
+          <div class="card-body">
+            <h5 class="card-title text-center">React</h5>
 
-      <!-- CSS -->
-      <div class="card col-4 borderNone" style="width: 10rem;" >
-        <img src="src/img/icon/css.png" class="card-img-top borderNone" alt="Projeto sobre estante de livros">
-        <div class="card-body">
-          <h5 class="card-title text-center">CSS</h5>
-          
-          
+          </div>
+
         </div>
-      </div>
 
-      <!-- JAVASCRIPT -->
-      <div class="card  col-4 borderNone" style="width: 10rem;">
-        <img src="src/img/icon/java-script.png" class="card-img-top borderNone" alt="Projeto sobre estante de livros">
+      <!-- TYPESCRIPT -->
+      <div class="card  col-3 borderNone tecnology-card" >
+        <img src="src/img/icon/typescript.png" class="card-img-top borderNone" alt="Icone do Typescript">
         <div class="card-body">
-          <h5 class="card-title">Javascript</h5>
-          
+          <h5 class="card-title text-center">Typecript</h5>
+
         </div>
         <!-- ICON REFERENCE -->
         <!-- https://www.flaticon.com/free-icons/javascript -->
-      </div>
     </div>
     </div>
-    
 
-  
+    </div>
+
 
   </section>
 
   <!--  PROJETOS -->
-  <section class="">
+  <section>
     <div class="px-4 py-5 my-5 row justify-content-center marginNone" >
-      <div class="col-md-3 offset-md-4">
-        <h1 class="display-3 fw-bold text-end h1Special" id="projects">portfólio.</h1>
-        <h4 class="text-justify">Aqui você encontrará alguns projetos utilizando tecnologias como HTML, CSS, Javascript.
+      <div class="col-xl-4 col-lg-2 col-md-1 col-sm-7">
+        <div class="perfilPhoto"></div>
+      </div>
+      <div class="col-xxl-4  col-lg-6 col-md-4 col-10">
+        <h1 class="display-3 fw-bold text-md-end  text-center h1Special2" id="projects">portfólio.</h1>
+        <h4 class="text-justify col-lg-12 col-md-12 offset-lg-0 offset-md-9 text-md-end text-start margin-h4-portfolio">Aqui você encontrará alguns projetos utilizando tecnologias como HTML, CSS, Javascript, React e Typescript.
         </h4>
       </div>
     </div>
 
 
         <!-- PROJETOS IMAGENS -->
-        
-        <!-- PROJETO ESTANTE -->
-        <div class="projetos" style="padding-top: 5px; margin-bottom: 1em;">
-          <div class="row justify-content-evenly marginNone marginNone" >
 
-            <div class="card col-4 bordered" style="width: 28rem;">
+        <div class="projetos" >
+
+          <!-- PRIMEIRA LINHA -->
+          <div class="row justify-content-evenly marginNone marginNone"  >
+
+            <!-- PROJETO ESTANTE -->
+            <div class="card col-md-4
+            col-4 bordered" >
               <img src="src/img/img-projetos/Projeto - Estante de livros.png" class="card-img-top bordered" alt="Projeto sobre estante de livros">
               <div class="card-body">
                 <h5 class="card-title">Estante de Livros</h5>
-                <p class="card-text justify">Projeto feito para o curso da Happy Code para conhecer e aplicar conceitos de CSS ligados ao HTML. A ideia foi um criar uma espécie de biblioteca de livros onde o usuário poderia ver uma pequena sinopse e ter dados básicos do livro..</p>
-                <a href="projetos/Estante de livros/estante.html" class="btn btn-primary btnSpecialColor position-absolute bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+                <p class="card-text justify">Projeto feito para o curso da Happy Code para conhecer e aplicar conceitos de CSS ligados ao HTML. A ideia foi um criar uma espécie de biblioteca de livros onde o usuário poderia ver uma pequena sinopse e ter dados básicos do livro.</p>
+                <a href="projetos/Estante de livros/estante.html" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
               </div>
             </div>
 
             <!-- PROJETO LOCADORA -->
-            <div class="card col-4 bordered" style="width: 28rem;">
+            <div class="card col-4 bordered" >
               <img src="src/img/img-projetos/Projeto - Locadora 2000.png" class="card-img-top bordered" alt="Projeto sobre estante de livros">
               <div class="card-body">
                 <h5 class="card-title">Locadora 2000</h5>
-                <p class="card-text justify" >Projeto feito para o curso da Happy Code para conhecer e aplicar conceitos de CSS ligados ao HTML via seletores, utilizou-se também  do Bootstrap 5 para personalizar e iniciar na edição de páginas via biblioteca. E por ultimo, mas não menos importante Javascript sendo usado no cadastro sendo aplicado a página, via DOM. 
-
+                <p class="card-text justify" >Projeto feito para o curso da Happy Code para conhecer e aplicar conceitos de CSS ligados ao HTML via seletores, utilizou-se também  do Bootstrap 5 para personalizar e iniciar na edição de páginas via biblioteca. E por ultimo, mas não menos importante Javascript sendo usado no cadastro sendo aplicado a página, via DOM.
                 </p>
-                <a href="projetos/Locadora 2000/locadora2000.html" class="btn btn-primary btnSpecialColor position-absolute bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+                <a href="projetos/Locadora 2000/locadora2000.html" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
               </div>
             </div>
           </div>
           <br>
+          <!-- SEUNDA LINHA -->
           <div class="row justify-content-evenly marginNone marginNone" >
 
-            <div class="card col-4 bordered" style="width: 28rem;">
+            <!-- PROJETO JOGO DO MARIO -->
+            <div class="card col-4 bordered" >
               <img src="src/img/img-projetos/Projeto - Mario.png" class="card-img-top bordered" alt="Projeto sobre estante de livros">
               <div class="card-body">
                 <h5 class="card-title">Mario Jump</h5>
                 <p class="card-text justify" >Projeto feito para o curso da Happy Code para conhecer e aplicar conceitos de CSS ligados ao HTML ligados ao DOM. Nesse projeto especificamente, apredemos a animar e a relacionar esses objetos animados sendo referenciados e colapsados dentro da página. O projeto em questão se referenciou em Mário.</p>
-                <a href="projetos/Mario/marioJump.html" class="btn btn-primary btnSpecialColor position-absolute bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+                <a href="projetos/Mario/marioJump.html" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
               </div>
             </div>
 
-            <!-- PROJETO LOCADORA -->
-            <div class="card col-4 bordered" style="width: 28rem;">
+            <!-- PROJETO CARTÃO DE VISITA -->
+            <div class="card col-4 bordered" >
               <img src="src/img/img-projetos/Projeto - Cartao de Visita.png" class="card-img-top bordered" alt="Projeto sobre estante de livros">
               <div class="card-body">
                 <h5 class="card-title">Cartão de Visita</h5>
                 <p class="card-text justify">Projeto feito para o curso da Happy Code para conhecer e aplicar conceitos de CSS ligados ao HTML. Nesse projeto aprendemos a fazer um cartão de apresentação personalizado por cada um e a adicionar íncones e aplicar efeito 3D na página.</p>
-                <a href="projetos/CartaodeVisita/cartaoDeVisita.html" class="btn btn-primary btnSpecialColor position-absolute bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+                <a href="projetos/CartaodeVisita/cartaoDeVisita.html" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
               </div>
             </div>
           </div>
-          
-        </div>
-        <!-- <div class="">
+          <br>
+          <!-- TERCEIRA LINHA -->
+          <div class="row justify-content-evenly marginNone marginNone" >
 
-          <img src="src/img/img-projetos/Projeto - Estante de livros.png" alt="Projeto sobre estante de livros">
-        </div>
-        <div class="slide">
-          <img src="src/img/img-projetos/Projeto - Locadora 2000.png" alt="Projeto com o cadastro de filmes">
-        </div>
-        <div class="slide">
-          <img src="src/img/img-projetos/Projeto - Mario.png" alt="projeto de um jogo simples do Mário">
-        </div>
-        <div class="slide">
-          <img src="src/img/img-projetos/Projeto - Cartao de Visita.png" alt="Projeto om um cartão de visita próprio">
+            <!-- E-COMERCE - MANGÁS E MANWAS -->
 
-          
+            <div class="card col-4 bordered" >
+              <img src="src/img/img-projetos/Projeto - MarioMoviePage.png" class="card-img-top bordered" alt="Projeto eComerce - Mangás e Manwas">
+              <div class="card-body">
+                <h5 class="card-title">Página do filme do Mário</h5>
+                <p class="card-text justify">Este projeto foi criado utilizando CSS, HTML e Javascript, marcando o início da minha jornada de estudos. Ele desempenhou um papel crucial, pois me permitiu desenvolver habilidades práticas na busca por bugs e soluções online. Além disso, aprendi a importância do conceito de responsividade, que desempenhou um papel fundamental nesse projeto.</p>
 
-    </div> -->
-    
+                <a href="projetos/Mario Filme/Projeto-Mario/src/MarioFilme.html" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+              </div>
+            </div>
+
+            <!-- PROJETO CONVERSORES -->
+            <div class="card col-4 bordered" >
+              <img src="src/img/img-projetos/Projeto - Conversores.png" class="card-img-top bordered" alt="Projeto Conversores">
+              <div class="card-body">
+                <h5 class="card-title">Conversores</h5>
+                <p class="card-text justify" >Este projeto foi criado utilizando React.js. O trabalho teve como objetivo aprofundar os conceitos de 'componentização' e 'estado', além de enfrentar desafios matemáticos propostos por um amigo. Esses desafios foram desenvolvidos de forma a serem aplicáveis em qualquer linguagem de programação que estivéssemos estudando.
+                </p>
+                <a href="projetos/Conversores/Conversores.html" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <!-- QUARTA LINHA -->
+          <div class="row justify-content-evenly marginNone marginNone" >
+            <!-- PROJETO GERADOR DE SENHAS -->
+            <div class="card col-4 bordered" >
+              <img src="src/img/img-projetos/Projeto - Gerador de Senhas.png" class="card-img-top bordered" alt="Projeto Gerador de Senhas">
+              <div class="card-body">
+                <h5 class="card-title">Gerador de Senhas</h5>
+                <p class="card-text justify">
+                  Este projeto é um Gerador de Senhas criado exclusivamente com javascript, HTML e CSS. O foco principal é demonstrar o uso eficiente de arrays para produzir senhas personalizadas. Os usuários podem especificar a quantidade desejada de caracteres, bem como os tipos de caracteres a serem incluídos. Através dessa aplicação, explorei o controle de arrays para atender às solicitações dos usuários e proporcionar senhas seguras e adaptáveis.
+                </p>
+                <a href="projetos/Projeto Gerador de Senhas/GeradorDeSenhas.html" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+              </div>
+            </div>
+
+            <!-- PROJETO LOCADORA -->
+            <div class="card col-4 bordered" >
+              <img src="src/img/img-projetos/Projeto - eComerce-Mangas e manwas.png" class="card-img-top bordered" alt="Projeto eComerce - Mangás e Manwas">
+              <div class="card-body">
+                <h5 class="card-title">E-commerce - Mangás e Manwas</h5>
+                <p class="card-text justify">Este projeto é um E-commerce desenvolvido a partir do zero no curso Descomplica, usando React e React Bootstrap. Está em desenvolvimento, tem alguns bugs e ainda não é responsivo para dispositivos móveis. Se quiser acompanhar o progresso e explorar, fique à vontade. Foi uma experiência divertida de aplicar criatividade e conhecimentos de React Bootstrap.
+                </p>
+                <a href="https://rhferro.github.io/mangasemanhwasTeste/" class="btn btn-primary btnSpecialColor position-relative bottom-0 start-50 translate-middle-x" target="_blank">Ir para link</a>
+              </div>
+          </div>
+          </div>
+
+          <br>
+        </div>
+
+
+
   </section>
 
 
@@ -293,16 +370,16 @@
   <!-- MAIN -->
 
 
-  <!-- HERO IMAGE -->
-  <!-- *LEMBRAR AO USUÁRIO QUE O SITE É DE TECNOLOGIA E APRESENTAÇÃO DE UM PORTFÓLIO -->
-  <!-- *EXPLICAR AS TECNOLOGIAS UTILIZADAS DE FORMA RESUMIDA -->
+  <!-- OK - HERO IMAGE -->
+  <!-- OK - *LEMBRAR AO USUÁRIO QUE O SITE É DE TECNOLOGIA E APRESENTAÇÃO DE UM PORTFÓLIO -->
+  <!-- OK - *EXPLICAR AS TECNOLOGIAS UTILIZADAS DE FORMA RESUMIDA -->
 
 
-  <!-- *A MEDIDA QUE DESCER NO SITE, A 'HERO IMAGE' SOME DEVAGAR E DA ESPAÇO AOS PROJETOS JÁ FEITOS -->
+  <!-- OK - *A MEDIDA QUE DESCER NO SITE, A 'HERO IMAGE' SOME DEVAGAR E DA ESPAÇO AOS PROJETOS JÁ FEITOS -->
 
-  <!-- FUNDO DA TELA "NAO-TOTALMENTE-BRANCO" CARD PRETO COM LETRAS 'DAQUELA COR' -->
+  <!-- MUDANÇA DE PLANO - FUNDO DA TELA "NAO-TOTALMENTE-BRANCO" CARD PRETO COM LETRAS 'DAQUELA COR' -->
 
-  <!-- CASO O USUÁRIO QUEIRA VOLTAR PRA O TOPO, OS PROJETOS SAEM DEVAGAR E VOLTA A HERO IMAGE -->
+  <!-- MUDANÇA DE PLANO - CASO O USUÁRIO QUEIRA VOLTAR PRA O TOPO, OS PROJETOS SAEM DEVAGAR E VOLTA A HERO IMAGE -->
   <!-- VAI DAR UM TRABALHO TRISTE -->
 
 
@@ -311,13 +388,16 @@
   <footer class=" conteiner-flex bgFooter position-relative">
 
     <div class="row justify-content-start textColor3 marginNone borderNone" >
-      <div class="display-3 fw-bold text-end h1Special2 col-4">
-        <h1 class=" h1Special2" id="contacts">Contatos.</h1>
+
+      <!-- TITULO -->
+      <div class="display-3 fw-bold  col-6">
+        <h1 class=" h1Special" id="contacts">Contatos.</h1>
       </div>
-      <div>
-        <table class="table text-end table-borderless">
-          
-          <tbody class="position-absolute bottom-0 end-0 translate-middle">
+      <div class="py-lg-5 py-md-4 col-lg-6 col-md-2 ">
+        <table class="table text-start table-borderless">
+
+          <tbody class="">
+            <!-- position-absolute bottom-0 end-2 translate-middle -->
             <tr>
               <!-- LINKEDIN -->
               <td><img class="contactBorder" src="src/img/icon-contato/linkedin.svg" width="35px" alt=""></td>
@@ -339,16 +419,17 @@
               <td><img class="contactBorder" src="src/img/icon-contato/square-whatsapp.svg" width="35px" alt=""></td>
               <td style="text-decoration: none;" class="textColor1">+55 (81) 99718-3666</td>
             </tr>
-            
+
           </tbody>
-      
+
       </div>
     </div>
-    <div class="position-absolute bottom-0 end-0 fs-6 fw-light" style="padding: 10px">Projeto desenvolvido por Raphael Ferro utilizando a biblioteca do Bootstrap para a finalização do curso da Happy Code</div>
+    <div class="position-absolute bottom-0 end-0 fs-6 fw-light" style="padding: 10px">Projeto desenvolvido por Raphael Ferro utilizando a biblioteca do Bootstrap para a finalização do curso da Happy Code
+    </div>
 
   </footer>
 
-  
+
   <!-- BARRA TOTALMENTE PRETA OU PROXIMO DISSO -->
   <!-- CONTATOS E INFORMAÇÕES-->
   <!-- GITHUB -->

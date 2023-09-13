@@ -1,0 +1,10 @@
+@media (max-width: 1024px) {
+  .perfilPhoto {
+    width: 275px;
+    align-items: center;
+  }
+  .margin-h4-portfolio {
+    width: 470px;
+    margin-left: 0;
+  }
+}

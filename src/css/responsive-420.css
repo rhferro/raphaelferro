@@ -1,0 +1,106 @@
+@media (min-width: 2560px) {
+  .perfilPhoto {
+    width: 400px;
+    align-items: center;
+  }
+  .margin-h4-portfolio {
+    width: 817px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1440px) {
+  .perfilPhoto {
+    width: 275px;
+    align-items: center;
+  }
+  .margin-h4-portfolio {
+    width: 470px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .perfilPhoto {
+    width: 250px;
+    align-items: center;
+  }
+  .margin-h4-portfolio {
+    width: 326px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  /* Hero Image */
+  .cropped {
+    width: 250px;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+  .hero-image {
+    /* background-color : black; */
+    width: 100vw;
+  }
+  .background-text {
+    position: absolute;
+  }
+  .background-text > h1 {
+    width: 100vw;
+  }
+  /* Text Hero Image */
+  .background-text > h1 {
+    color: rgb(35, 243, 94);
+    font-size: 1.3rem;
+  }
+
+  .responsive {
+    font-size: 1.3rem;
+    color: rgb(31, 23, 23);
+    font-weight: 600;
+  }
+  /* Text Tile of sections */
+  .h1Special,
+  .h1Special2 {
+    font-size: 3rem;
+  }
+
+  /* section about */
+
+  .perfilPhoto {
+    width: 150px;
+    align-items: center;
+  }
+
+  .tecnology-card {
+    width: 8rem;
+  }
+  .hardskill-padding {
+    padding: 0 55px;
+  }
+
+  /* PORTFÓLIO */
+  .margin-h4-portfolio {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  /* PROJETOS */
+  .projetos {
+    padding-top: 5px;
+    margin-bottom: 1em;
+  }
+
+  .bordered {
+    margin-top: 10px;
+    margin-left: 0;
+    border: rgb(31, 23, 23) solid 1px;
+    width: 20rem;
+    font-size: 16px;
+  }
+  .bordered > img {
+    width: 18rem;
+  }
+}

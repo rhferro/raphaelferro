@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .perfilPhoto {
+    width: 250px;
+    align-items: center;
+  }
+  .margin-h1-portfolio {
+    width: 326px;
+    margin-left: 0;
+  }
+  .h1Special {
+    font-size: 5rem;
+  }
+}
