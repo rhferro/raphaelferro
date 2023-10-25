@@ -56,6 +56,10 @@
   border: none;
 }
 
+button .btn-close {
+  color: white;
+}
+
 /* TEXT COLORS */
 .textColor1 {
   color: rgb(90, 237, 131);
@@ -65,6 +69,9 @@
 }
 .textColor3 {
   color: #f7f7ff;
+}
+.textColorMenu {
+  color: rgb(31, 23, 23);
 }
 
 /* FONT FAMILY */
@@ -76,6 +83,9 @@
 /* BACKGROUND COLORS */
 .backgroundColor {
   background-color: rgb(31, 23, 23);
+}
+.backgroundColorMenu {
+  background-color: rgb(136, 136, 136);
 }
 
 .backgroundColor2 {
